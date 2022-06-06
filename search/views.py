@@ -4,7 +4,7 @@ import time
 
 pool = redis.ConnectionPool(host='localhost', port=6379, db=0)
 
-MIN_REL = 0.00000
+MIN_REL = 0.01
 
 def index(request):
     return render(request, 'index.html')
