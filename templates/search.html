@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+        }
+
+        .RNNXgb {
+            display: flex;
+            z-index: 3;
+            height: 44px;
+            background: #fff;
+            border: 1px solid transparent;
+            box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+            border-radius: 24px;
+            margin: 0 auto;
+            width: 690px;
+        }
+
+        .emcav .RNNXgb {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            box-shadow: 0 2px 8px 1px rgba(64, 60, 67, .24);
+            border-color: rgba(223, 225, 229, 0);
+        }
+
+        .minidiv .emcav .RNNXgb {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+            border-color: rgba(223, 225, 229, 0);
+        }
+
+        .RNNXgb:hover,
+        .sbfc .RNNXgb {
+            background-color: #fff;
+            box-shadow: 0 2px 8px 1px rgba(64, 60, 67, .24);
+            border-color: rgba(223, 225, 229, 0)
+        }
+
+        .minidiv .RNNXgb:hover,
+        .minidiv .sbfc .RNNXgb {
+            border-color: rgba(223, 225, 229, 0);
+            box-shadow: 0 1px 6px rgba(32, 33, 36, .28)
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .topnav .search-container {
+            float: right;
+        }
+
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+
+        .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+
+        .SDkEP {
+            flex: 1;
+            display: flex;
+            padding: 5px 4px 0 14px;
+        }
+
+        .minidiv .SDkEP {
+            padding-top: 0
+        }
+
+        .iblpc span {
+            display: none
+        }
+
+        .sbfc .iblpc span,
+        .emcav .iblpc span {
+            display: block
+        }
+
+        .iblpc {
+            display: flex;
+            align-items: center;
+            padding-right: 6px;
+            margin-top: -7px
+        }
+
+        .sbfc .iblpc,
+        .emcav .iblpc {
+            padding-right: 14px;
+            margin-left: -1px
+        }
+
+        .CcAdNb {
+            margin: auto
+        }
+
+        .QCzoEc {
+            color: #9aa0a6
+        }
+
+        .z1asCe {
+            display: inline-block;
+            fill: currentColor;
+            height: 24px;
+            line-height: 24px;
+            position: relative;
+            width: 24px
+        }
+
+        .z1asCe svg {
+            display: block;
+            height: 100%;
+            width: 100%
+        }
+
+        .EZRelc .z1asCe {
+            float: left
+        }
+
+        .MXl0lf .z1asCe {
+            height: 20px;
+            width: 20px
+        }
+
+        .a4bIc {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap
+        }
+
+        .gLFyf {
+            height: 39px !important;
+            line-height: 39px;
+            margin-top: -42px
+        }
+
+        .CvDJxb:not(.minidiv) .gLFyf {
+            padding-bottom: 3px
+        }
+
+        .gLFyf {
+            background-color: transparent;
+            border: none;
+            margin: 0;
+            padding: 0;
+            color: rgba(0, 0, 0, .87);
+            word-wrap: break-word;
+            outline: none;
+            display: flex;
+            flex: 100%;
+            -webkit-tap-highlight-color: transparent;
+            margin-top: -37px;
+            height: 34px;
+            font-size: 16px;
+        }
+
+        .EA3l1b {
+            background-color: #323232;
+            padding: 0 24px
+        }
+
+        .EA3l1b {
+            border-radius: 8px
+        }
+
+        .awHmMb.awHmMb {
+            line-height: 20px
+        }
+
+        .awHmMb {
+            -webkit-box-flex: 1;
+            color: #fff;
+            flex: 1 1 auto;
+            margin: 14px 0;
+            word-break: break-word
+        }
+
+        .wHYlTd {
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            line-height: 22px
+        }
+
+        .yUTMj {
+            font-family: arial, sans-serif;
+            font-weight: 400
+        }
+
+        .Sxjlmb {
+            white-space: nowrap;
+            margin: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: normal;
+            color: #fff
+        }
+
+        .ExCKkf {
+            height: 100%;
+            color: #70757a;
+            vertical-align: middle;
+            outline: none
+        }
+
+        .ExCKkf {
+            margin-right: 12px
+        }
+
+        .M2vV3 {
+            display: flex
+        }
+
+        .z1asCe {
+            display: inline-block;
+            fill: currentColor;
+            height: 24px;
+            line-height: 24px;
+            position: relative;
+            width: 24px
+        }
+
+        .z1asCe svg {
+            display: block;
+            height: 100%;
+            width: 100%
+        }
+
+        .Tg7LZd {
+            height: 44px;
+            width: 44px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            flex: 0 0 auto;
+            padding: 0;
+        }
+
+        .Tg7LZd {
+            flex: 0 0 auto;
+            padding-right: 13px
+        }
+
+        .zgAlFc {
+            background: none;
+            color: #4285f4;
+            height: 24px;
+            width: 24px;
+            margin: auto
+        }
+
+        .CIKhFd {
+            box-sizing: border-box;
+            visibility: hidden
+        }
+
+        .v0rrvd {
+            padding-bottom: 16px
+        }
+
+        .Xb004 {
+            align-items: center;
+            align-items: center;
+            -webkit-box-align: center;
+            display: -webkit-box;
+            display: flex;
+            display: flex
+        }
+
+        .WE0UJf {
+                    height: 43px;
+                }
+
+        .lnctfd .Xb004 {
+            animation: g-snackbar-hide-content 350ms cubic-bezier(.4, 0, .2, 1) both;
+            animation: g-snackbar-hide-content 350ms cubic-bezier(.4, 0, .2, 1) both
+        }
+
+        .ZWC4b .Xb004 {
+            animation: g-snackbar-show-content 350ms cubic-bezier(.4, 0, .2, 1) 150ms both;
+            animation: g-snackbar-show-content 350ms cubic-bezier(.4, 0, .2, 1) 150ms both
+        }
+
+        .z5QvOe .Xb004 {
+            display: block;
+            padding: 8px 0
+        }
+
+        .LHJvCe {
+                    display: flex;
+                    /* -webkit-transition: all 220ms ease-in-out; */
+                    color: #70757a;
+                    justify-content: space-between;
+                    min-width: 652px;
+                    position: absolute;
+                    top: 0;
+                    line-height: 43px
+                }
+
+        @media screen and (max-width: 600px) {
+            .topnav .search-container {
+                float: none;
+            }
+
+            .CIKhFd,
+
+            .topnav a,
+            .topnav input[type=text],
+            .topnav .search-container button {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin-top:20px" class="sfbg"></div>
+
+    <form method="POST" action="search">
+        {% csrf_token %}
+        <div class="RNNXgb" jsname="RNNXgb">
+            <div class="SDkEP">
+                <div class="iblpc" jsname="uFMOof">
+                    <div class="CcAdNb"><span class="QCzoEc z1asCe MZy1Rb"
+                            style="height:20px;line-height:20px;width:20px"><svg focusable="false"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                                </path>
+                            </svg></span></div>
+                </div>
+                <div jscontroller="vZr2rb" class="a4bIc" jsname="gLFyf" jsaction="h5M12e;input:d3sQLd;blur:jI3wzf">
+                    <div class="YacQv gsfi" jsname="vdLsw"></div>
+                    <div jsname="aJyGR" jscontroller="xMclgd" class="gLFyf i4ySpb gsfi" data-promo-open-duration="2000"
+                        jsaction="rcuQ6b:npT2md">
+                        <g-snackbar jsname="nH91he" jscontroller="OZLguc" style="display:none" data-dismiss=""
+                            jsshadow="" jsaction="rcuQ6b:npT2md" id="ow6" __is_owner="true">
+                            <div jsname="Ng57nc" class="CIKhFd v0rrvd"
+                                data-ved="0ahUKEwiMm7fYlJj4AhXDmFYBHTmyBeIQ4G8ICg" jsowner="ow6">
+                                <div class="EA3l1b">
+                                    <div class="Xb004" jsslot=""><span class="awHmMb wHYlTd yUTMj Sxjlmb">Press <span
+                                                class="qfY0Jf">/</span> to jump to the search box</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </g-snackbar>
+                    </div>
+                    <div style="margin-top:30px" class="sfbg"></div>
+                    <input class="gLFyf gsfi" maxlength="2048" name="search" type="text" aria-autocomplete="both"
+                        aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" role="combobox"
+                        spellcheck="false" value="{{query}}">
+                </div>
+                <!-- <div class="dRYYxd">
+                    <div jscontroller="PymCCe" class="BKRPef M2vV3" jsname="RP0xob" aria-label=" Clear" role="button"
+                        jsaction="AVsnlb;rcuQ6b:npT2md" data-ved="0ahUKEwiMm7fYlJj4AhXDmFYBHTmyBeIQ05YFCAw"> <span
+                            class="ExCKkf z1asCe rzyADb" jsname="itVqKe" role="button" tabindex="0" aria-label=" Clear">
+                            <div style="margin-top:3px" class="sfbg"></div>
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                </path>
+                            </svg>
+                        </span> <span class="ACRAdd"></span> </div>
+                </div> -->
+            </div>
+            <!-- <div class="search-nav"> -->
+                <div class="search-button">
+            <button jsname="Tg7LZd" class="Tg7LZd" type="submit">
+                <div class="zgAlFc"> <span class="z1asCe MZy1Rb"><svg focusable="false"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                            </path>
+                        </svg></span> </div> </div>
+            </button>
+        </div>
+    </form>
+
+    <div style="margin-top:10px" class="sfbg"></div>
+    <div class="appbar" id="appbar">
+        <div id="extabar">
+            <div style="position:relative; padding-left: 50px;">
+                <div class="WE0UJf" id="slim_appbar">
+                    <div class="LHJvCe">
+                        <div id="result-stats">About {{number}} results<nobr>(in {{timecost}} seconds)&nbsp;</nobr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% if final_result %}
+    <!-- <b style="padding-left: 50px; padding-right: 50px; color: #646464;">Web Results</b> -->
+    {% for result in final_result %}
+    <div style="padding-left: 50px; padding-right: 50px;">
+        <h3 style="color: blue;">{{ result.0 }}</h3>
+        <h3 style="color: green;"><a href="{{ result.0 }}" target="_blank">{{ result.1 }}</a></h3>
+        <h3>{{ result.2 }}</h3>
+    </div><br><br>
+    {% endfor %}
+    {% endif %}
+
+</body>
+
+</html>
